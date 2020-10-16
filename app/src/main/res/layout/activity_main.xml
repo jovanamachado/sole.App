@@ -7,29 +7,68 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/txtInsira3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developer By Jovana M"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.993"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
         android:id="@+id/textView2"
         android:layout_width="231dp"
         android:layout_height="41dp"
         android:text="Sr. Dione Carlos"
-        android:textSize="32sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="241dp" />
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="231dp"
         android:layout_height="51dp"
+        android:layout_marginTop="248dp"
         android:text="Seja Bem-Vindo"
-        android:textSize="32sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="191dp" />
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="83dp"
-        android:layout_height="67dp"
-        app:srcCompat="@drawable/car"
-        tools:layout_editor_absoluteX="271dp"
-        tools:layout_editor_absoluteY="215dp" />
+        android:layout_width="74dp"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtInsira3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.423"
+        app:srcCompat="@drawable/car" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:background="#646464"
+        android:text="Entrar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
